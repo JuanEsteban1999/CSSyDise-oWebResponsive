@@ -1,0 +1,95 @@
+/*----------------------------------------------Tipografia----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	font-family: 'Dancing Script', cursive;
+}
+.Contenedor{
+	width: 900px;
+	max-width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+
+/*-----------------------------------------------Encabezado-----------------------------------------------*/
+.Encabezado{
+	animation: animation-header 3s;
+	border-radius: 10px 10px 0 0;
+	background-color: #5B7989;
+	display: flex;
+	width: 900px;
+	max-width: 100%;
+	color: #FFF;
+}
+.Titulo{
+	text-shadow: 2px 2px 2px #02010A;
+	padding: 5px;
+ 	line-height: 50px;
+ }
+.Menu{
+	line-height: 110px;
+	margin-left: auto;
+}
+.Menu_link{
+	color: #FFF;
+	padding: 10px;
+	font-size: 19px;
+	line-height: normal;
+}
+.actual{text-decoration: none;}
+
+
+/*-------------------------------------------------Contenido-------------------------------------------------*/
+.Contenido{
+	background-color: #D5C75F; 
+	display: flex;
+	flex-flow: wrap;
+}
+.Contenido img{
+	width: 30%;
+	height: 30%;
+	padding: 10px;
+}
+.imagen1{filter: blur(10px);}
+.imagen2,.imagen4,.imagen6{filter: grayscale(100%);}
+.imagen3{filter: sepia(90%);}
+/*-----------------------------------------------Pie de pagina-----------------------------------------------*/
+.Pie_de_pagina{
+	background-color: #C6D5C5;
+	border-radius: 0 0 10px 10px;
+	padding: 5px;
+	display: flex;
+}
+img[alt^='icon']{width: 20px;}
+.Pie_de_pagina div{margin-right: 37px;}
+/*-----------------------------------------------Web responsive-----------------------------------------------*/
+@media (max-width: 750px) {
+	.Contenedor{width: 100%;}
+	.Encabezado{display: block;}
+	.Menu{
+		text-align: center;
+		line-height: normal;
+	}
+	.Logo{
+		text-align: center;
+		line-height: normal;
+	}
+	.Contenido{display: block;}
+	.Contenido img{width: 100%;}
+	.Pie_de_pagina{
+		display: block;
+		text-align: left;
+	}
+
+}
+@-webkit-keyframes animation-header{
+	0%{margin-top: 150%;}
+	60%{margin-top: -5%;}
+	100%{margin-top: 0%;}
+}
+

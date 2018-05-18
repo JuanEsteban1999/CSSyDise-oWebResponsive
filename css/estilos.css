@@ -1,0 +1,111 @@
+/*----------------------------------------------Tipografia----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	font-family: 'Dancing Script', cursive;
+}
+.Contenedor{
+	width: 900px;
+	max-width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+/*-----------------------------------------------Encabezado-----------------------------------------------*/
+.Encabezado{
+	animation: animation-header 3s;
+	border-radius: 10px 10px 0 0;
+	background-color: #5B7989;
+	display: flex;
+	width: 900px;
+	max-width: 100%;
+	color: #FFF;
+}
+.Titulo{
+	text-shadow: 2px 2px 2px #02010A;
+	padding: 5px;
+ 	line-height: 50px;
+ }
+.Menu{
+	line-height: 110px;
+	margin-left: auto;
+}
+.Menu_link{
+	color: #FFF;
+	padding: 10px;
+	font-size: 19px;
+	line-height: normal;
+}
+.actual{text-decoration: none;}
+
+/*---------------------------------------------------Banner---------------------------------------------------*/
+.Banner{
+	background-color:  #82c3a6;
+	text-align: center;
+	padding: 10px;
+}
+.Banner img{width: 70%;}
+/*-------------------------------------------------Contenido-------------------------------------------------*/
+.Contenido{
+	background-color: #D5C75F; 
+	display: flex;
+	padding: 20px;
+}
+.paisajes img{width: 90%; transition: all 1s}
+.paisajes img:hover{
+	transform: rotate(10deg);
+	border-right: 2px solid;
+	-webkit-box-shadow: 2px 2px 2px #82C3A6;
+	box-shadow: 2px 2px 2px #82C3A6;
+}
+.paisajes a{
+	color: #000;
+	font-size: 23px;
+}
+.retratos img{width: 90%; transition: all 1s;}
+.retratos img:hover{
+	transform: translate(5px,-20px);
+	border-right: 2px solid;
+}
+.retratos a{
+	color: #000;
+	font-size: 23px;
+}
+/*-----------------------------------------------Pie de pagina-----------------------------------------------*/
+.Pie_de_pagina{
+	background-color: #C6D5C5;
+	border-radius: 0 0 10px 10px;
+	padding: 5px;
+	display: flex;
+}
+.Pie_de_pagina img[alt^='icono']{width: 20px;}
+.Pie_de_pagina div{margin-right: 37px;}
+/*-----------------------------------------------Web responsive-----------------------------------------------*/
+@media (max-width: 750px) {
+	.Contenedor{width: 100%;}
+	.Encabezado{display: block;}
+	.Menu{
+		text-align: center;
+		line-height: normal;
+	}
+	.Logo{
+		text-align: center;
+		line-height: normal;
+	}
+	.Contenido{
+		display: block;}
+	.Pie_de_pagina{
+		display: block;
+		text-align: left;
+	}
+}
+@-webkit-keyframes animation-header{
+	0%{margin-top: 150%;}
+	60%{margin-top: -5%;}
+	100%{margin-top: 0%;}
+}
+
